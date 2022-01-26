@@ -4,7 +4,7 @@ get '/' do
   send_file File.join(settings.public_folder, 'index.html')
 end
 
-get '/pullrequest' do
+get '/pr' do
   send_file File.join(settings.public_folder, 'pr.html')
 end
 
