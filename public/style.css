@@ -23,15 +23,21 @@
   font-weight: bolder;
 }
 
-.header {
-  background-image: url("img/banner.svg");
+.header, .header__pr {
   width: 100%;
   height: 51vh;
   background-size: cover;
   background-position: left;
   text-align: center;
 }
-.header h1 {
+.header{
+  background-image: url("img/banner.svg");
+}
+.header__pr{
+  background-image: url("img/bannerPull.svg");
+  background-position: top;
+}
+.header h1, .header__pr h1{
   font-size: 2.5rem;
   padding-top: 8rem;
   animation-duration: 3s;
@@ -142,7 +148,7 @@ h2 {
   .header{
     height: 55vh;
   }
-  .header h1 {
+  .header h1, .header__pr h1 {
     font-size: 4rem;
     padding-top: 10rem;
 
