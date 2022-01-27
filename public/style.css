@@ -33,7 +33,7 @@
 }
 .header h1 {
   font-size: 2.5rem;
-  padding: 4rem;
+  padding-top: 8rem;
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -99,27 +99,31 @@ h2 {
   font-size: 2.2rem;
   text-align: right;
 }
-
-.hobbies__card {
+.hobbies__container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hobbies__card {
+  display: flex;
+  flex-direction: column;
   border-radius: 1%;
-  /* background-color: #fffffd; */
-
+  background-color: #fffffd; 
   border: #b8bbbe solid 0.1rem;
   padding: 2rem;
   justify-content: center;
   margin: 2rem;
   width: 300px;
   height: 300px;
+  text-align: center;
 }
 
 .hobbies_img {
-  width: 80%;
+  height: 70%;
+  margin-bottom: 1rem;
 }
-.hobbies__card p {
-  text-align: center;
-}
+
 .footer {
   background-color: #404eed;
   height: 25%;
@@ -132,28 +136,34 @@ h2 {
   font-weight: bold;
 }
 @media (min-width: 1024px) {
+  .nav__menu {
+    justify-content: center;
+  }
+  .header{
+    height: 55vh;
+  }
+  .header h1 {
+    font-size: 4rem;
+    padding-top: 10rem;
+
+  }
   .about__card {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 65%;
     height: 370px;
-  }
-  .about__img {
-    height: 320px;
+    margin-bottom: 6rem;
   }
 
-  .about__text {
-    margin: 2rem;
+  .hobbies{
+    height: 10vh;
+    background-image: none;
   }
-  .about__text p {
-    text-align: center;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
+
+  .hobbies h3 {
+    text-align: left;
   }
-  .about__text h3 {
-    text-align: center;
-    padding-bottom: 1rem;
-    color: rgb(33, 31, 41);
-    font-size: 2rem;
+  .hobbies__card{
+    margin-bottom: 4rem;
   }
 }
