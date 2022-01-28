@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Graziele Web Application</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li><a href="/" class="nav__link">Home</a></li>
+        <li><a href="pr" class="nav__link">PR's</a></li>
+        <li><a href="university" class="nav__link">University</a></li>
+      </ul>
+    </nav>
+    <main><%= yield %></main>
+    <footer class="footer">
+      <div class="social">
+        <p>Follow me on the social media</p>
+        <ul class = social__icons>
+          <li><a href="https://github.com/grazirs"><i data-feather="github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/grazieleribeiros/"><i data-feather="linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/graziribeiros/"><i data-feather="instagram"></i></a></li>
+        </ul>
+      </div>
+      <p>Copyright © 2022 | Desenvolvido por Graziele Ribeiro Santos</p>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

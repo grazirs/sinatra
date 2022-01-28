@@ -208,13 +208,40 @@ h2 {
 .footer {
   background-color: #404eed;
   height: 25%;
+  color: whitesmoke;
 }
 .footer p {
-  color: whitesmoke;
   font-size: 0.7rem;
   text-align: center;
   padding: 1rem;
   font-weight: bold;
+}
+.social__icons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.social__icons li svg {
+  text-decoration: none;
+  margin: 0.5rem 1rem;
+  color: whitesmoke;
+  width: 35px;
+}
+
+.social__icons li svg:hover {
+  stroke: rgb(187, 18, 136);
+  transition: all 1s;
+  transform: scale(1.2);
+}
+.not__found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 690px;
+}
+.not__found img {
+  width: 370px;
 }
 @media (min-width: 1024px) {
   .nav__menu {
@@ -253,13 +280,18 @@ h2 {
     margin-bottom: 4rem;
   }
 
-  .projects{
+  .projects {
     padding: 4rem;
   }
-  
 
   .institutions__card img {
     margin-top: 5rem;
+  }
+  .not__found{
+    height: 748px;
+  }
+  .not__found img{
+    width: 650px;
   }
 }
 
@@ -267,7 +299,6 @@ h2 {
   .projects {
     flex-direction: row;
     height: 53vh;
-    
   }
   .projects img {
     height: 50vh;
