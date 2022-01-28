@@ -9,18 +9,23 @@ describe 'app.rb' do
   def app
     Sinatra::Application
   end
-  it 'returns index.html' do
+  it 'returns index.erb' do
     get '/'
     expect(last_response).to be_ok
   end
 
-  it 'returns pr.html' do
+  it 'returns pr.erb' do
     get '/pr'
     expect(last_response).to be_ok
   end
 
-  it 'returns university.html' do
+  it 'returns university.erb' do
     get '/university'
     expect(last_response).to be_ok
+  end
+
+  it "returns status 404" do
+    get 'notfound'
+    expect(last_response.status).to eq(404)
   end
 end

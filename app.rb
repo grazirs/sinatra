@@ -3,13 +3,17 @@
 require 'sinatra'
 
 get '/' do
-  send_file File.join(settings.public_folder, 'index.html')
+  erb :index
 end
 
 get '/pr' do
-  send_file File.join(settings.public_folder, 'pr.html')
+  erb :pr
 end
 
 get '/university' do
-  send_file File.join(settings.public_folder, 'university.html')
+  erb :university
+end
+
+not_found do
+  erb :notfound
 end
