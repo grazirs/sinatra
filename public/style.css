@@ -6,7 +6,6 @@
   font-size: 16px;
   font-family: "nunito", sans-serif;
 }
-
 .nav__menu {
   display: flex;
   justify-content: space-between;
@@ -15,14 +14,12 @@
   background-color: #011838;
   padding: 1rem;
 }
-
 .nav__link {
   text-decoration: none;
   margin: 2rem;
   color: #f0ecec;
   font-weight: bolder;
 }
-
 .header,
 .header__pr {
   width: 100%;
@@ -65,7 +62,6 @@ h2 {
   justify-content: center;
   align-content: center;
 }
-
 .about__card {
   display: flex;
   justify-content: center;
@@ -76,11 +72,9 @@ h2 {
   background-color: #f0ebf5;
   width: 340px;
 }
-
 .about__img {
   max-height: 320px;
 }
-
 .about__text {
   margin: 2rem;
 }
@@ -94,14 +88,12 @@ h2 {
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
-
 .hobbies {
   background-image: url("img/middleBanner.svg");
   background-position: right;
   height: 35vh;
   margin: 1.2rem;
 }
-
 .hobbies h3 {
   padding: 1.2rem;
   font-size: 2.2rem;
@@ -128,12 +120,10 @@ h2 {
   height: 300px;
   text-align: center;
 }
-
 .hobbies_img {
   height: 70%;
   margin-bottom: 1rem;
 }
-
 .pr {
   justify-content: center;
   display: flex;
@@ -163,7 +153,6 @@ h2 {
   background-color: darkblue;
   border-radius: 25px;
 }
-
 .institutions__container {
   display: flex;
   flex-wrap: wrap;
@@ -171,7 +160,6 @@ h2 {
   align-content: center;
   height: 100%;
 }
-
 .institutions__card {
   width: 150px;
   height: 250px;
@@ -185,7 +173,6 @@ h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
-
 .projects {
   flex-direction: column;
   background-color: #f6f6f6;
@@ -279,11 +266,9 @@ h2 {
   .hobbies__card {
     margin-bottom: 4rem;
   }
-
   .projects {
     padding: 4rem;
   }
-
   .institutions__card img {
     margin-top: 5rem;
   }

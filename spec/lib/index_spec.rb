@@ -24,7 +24,7 @@ describe 'app.rb' do
     expect(last_response).to be_ok
   end
 
-  it "returns status 404" do
+  it 'returns status 404' do
     get 'notfound'
     expect(last_response.status).to eq(404)
   end
